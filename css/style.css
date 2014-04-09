@@ -1,0 +1,42 @@
+/*
+	Written From Scratch By Osama Elzero	
+*/
+
+*
+{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-transition:all 0.8s ease-out;
+	-moz-transition:all 0.8s ease-out;
+	-o-transition:all 0.8s ease-out;
+	transition:all 0.8s ease-out;
+}
+
+body {background:#DDD;}
+
+.container {margin:20px auto;width:910px;}
+
+.container .product {width:300px;height:228px;float:left;position:relative;padding:3px;background:#FFF;border:1px solid #CCC;}
+
+.container .product:not(:last-child) {margin-right:5px;}
+
+.container .product img {width:100%;}
+
+.container .product:hover img {zoom:1;filter:alpha(opacity=50);opacity:0.5;}
+
+.container .product:hover .inner {zoom:1;filter:alpha(opacity=90);opacity:0.9;}
+
+.container .product .inner {background:#333;width:292px;height:219px;position:absolute;top:0;zoom:1;filter:alpha(opacity=0);opacity:0;margin-top:3px;}
+
+.container .product .inner h2 {position:absolute;top:0px;color:#E16243;width:100%;text-align:center;}
+
+.container .product .inner h3 {position:absolute;bottom:0px;color:#d2e00e;width:100%;text-align:center;}
+
+.container .product .inner:hover h2 {top:50px;}
+
+.container .product .inner:hover h3 {bottom:50px;}
+
+.container .product .inner:hover h3:hover {color:#FFF;}
+
+
